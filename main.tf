@@ -1,6 +1,6 @@
 # Определяем источник образа
    locals {
-     image_path = "/home/brahms/Source/terraform_debian/debina_img.qcow2"
+     image_path = "/debian_img.qcow2"
    }
 
 #variable "vm_count" {
@@ -19,7 +19,7 @@
  resource "libvirt_pool" "pool" {
      name = "four_mashines"
      type = "dir"
-     path = "/home/brahms/Source/terraform_4/images"
+     path = "/storage"
    }
 
 
